@@ -1,0 +1,12 @@
+{
+  "name": "seu-mustache",
+  "version": "1.0.0",
+  "private": true,
+  "description": "Site e painel da Barbearia Seu Mustache (front + API em Node, SQLite embutido)",
+  "scripts": {
+    "start": "node --disable-warning=ExperimentalWarning backend/server.js",
+    "dev": "node --disable-warning=ExperimentalWarning --watch backend/server.js",
+    "test": "node --disable-warning=ExperimentalWarning --test backend/test.js"
+  },
+  "engines": { "node": ">=22.13" }
+}

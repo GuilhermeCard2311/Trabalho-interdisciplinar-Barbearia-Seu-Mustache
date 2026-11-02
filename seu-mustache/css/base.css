@@ -1,0 +1,27 @@
+:root{
+  --bg:#000; --s1:#12110f; --s2:#1b1915; --line:#2f2b23;
+  --gold:#BDA36B; --gold-hi:#E7D188; --gold-lo:#98814D;
+  --ink:#F4ECDA; --mute:#A79E89;
+  --ok:#8DB580; --err:#E0776A;
+  --fd:'Fraunces',Georgia,'Times New Roman',serif;
+  --fb:'Instrument Sans',system-ui,-apple-system,'Segoe UI',Roboto,sans-serif;
+  color-scheme:dark;
+  box-sizing:border-box;
+  padding-top:env(safe-area-inset-top,0px);
+  padding-bottom:env(safe-area-inset-bottom,0px);
+}
+html{scroll-padding-top:calc(env(safe-area-inset-top,0px) + 96px);scroll-behavior:smooth}
+*,*::before,*::after{box-sizing:border-box}
+[hidden]{display:none!important}
+body{margin:0;background:var(--bg);color:var(--ink);font:400 16px/1.55 var(--fb);-webkit-font-smoothing:antialiased}
+img{max-width:100%}
+a{color:var(--gold-hi)}
+h1,h2,h3{font-family:var(--fd);font-weight:800;line-height:1.1;margin:0;letter-spacing:-.01em}
+p{margin:0}
+button{font:inherit;color:inherit;cursor:pointer}
+:focus-visible{outline:2px solid var(--gold-hi);outline-offset:2px}
+.ic{flex:none;vertical-align:middle}
+.wrap{max-width:1200px;margin:0 auto;padding:0 24px}
+.muted{color:var(--mute)}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+
